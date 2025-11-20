@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>CONSULT</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet"> 
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+<style>/* =====================
+   ENHANCED NAVIGATION STYLES
+   ===================== */
+.navbar {
+    background: #ffffff !important;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08) !important;
+    padding: 10px 0 !important;
+    transition: all 0.3s ease !important;
+}
+
+.navbar.sticky-top {
+    background: rgba(255, 255, 255, 0.98) !important;
+    backdrop-filter: blur(10px) !important;
+    -webkit-backdrop-filter: blur(10px) !important;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1) !important;
+    padding: 8px 0 !important;
+}
+
+.navbar-light .navbar-nav {
+    gap: 2px !important;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    font-family: 'Barlow', sans-serif !important;
+    padding: 12px 16px !important;
+    margin: 0 2px !important;
+    font-size: 15px !important;
+    font-weight: 500 !important;
+    color: #2d3436 !important;
+    border-radius: 6px !important;
+    transition: all 0.3s ease !important;
+    position: relative !important;
+    text-transform: capitalize !important;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link:focus {
+    color: var(--primary) !important;
+    background: rgba(51, 122, 131, 0.08) !important;
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+    color: var(--primary) !important;
+    font-weight: 600 !important;
+    position: relative !important;
+}
+
+.navbar-light .navbar-nav .nav-link.active::after {
+    content: '' !important;
+    position: absolute !important;
+    bottom: 8px !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    width: 20px !important;
+    height: 2px !important;
+    background: var(--primary) !important;
+    border-radius: 2px !important;
+}
+
+/* Dropdown Menu */
+.navbar-light .navbar-nav .dropdown-menu {
+    border: none !important;
+    border-radius: 8px !important;
+    padding: 8px 0 !important;
+    margin-top: 8px !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1) !important;
+    border-top: 3px solid var(--primary) !important;
+}
+
+.navbar-light .navbar-nav .dropdown-item {
+    padding: 8px 20px !important;
+    font-size: 14px !important;
+    color: #4a4a4a !important;
+    transition: all 0.2s ease !important;
+}
+
+.navbar-light .navbar-nav .dropdown-item:hover,
+.navbar-light .navbar-nav .dropdown-item:focus {
+    background: rgba(51, 122, 131, 0.05) !important;
+    color: var(--primary) !important;
+    padding-left: 25px !important;
+}
+
+/* Mobile Menu */
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+        background: #fff !important;
+        border-radius: 8px !important;
+        padding: 10px !important;
+        margin-top: 10px !important;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1) !important;
+    }
+    
+    .navbar-light .navbar-nav .nav-link {
+        padding: 10px 15px !important;
+        margin: 2px 0 !important;
+    }
+    
+    .navbar-light .dropdown-menu {
+        border: none !important;
+        box-shadow: none !important;
+        padding-left: 15px !important;
+        margin: 5px 0 !important;
+    }
+}</style></head>
+
+<div>
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-secondary ps-5 pe-0 d-none d-lg-block">
+        <div class="row gx-0">
+            <div class="col-md-6 text-center text-lg-start mb-2 mb-lg-0">
+                <div class="d-inline-flex align-items-center">
+                    <a class="text-body py-2 pe-3 border-end" href="faqs.html"><small>FAQs</small></a>
+                    <a class="text-body py-2 px-3 border-end" href=""><small>Support</small></a>
+                    <a class="text-body py-2 px-3 border-end" href=""><small>Privacy</small></a>
+                    <a class="text-body py-2 px-3 border-end" href=""><small>Policy</small></a>
+                    <a class="text-body py-2 ps-3" href=""><small>Career</small></a>
+                </div>
+            </div>
+            <div class="col-md-6 text-center text-lg-end">
+                <div class="position-relative d-inline-flex align-items-center bg-primary text-white top-shape px-5">
+                    <div class="me-3 pe-3 border-end py-2">
+                        <p class="m-0"><i class="fa fa-envelope-open me-2"></i>info@example.com</p>
+                    </div>
+                    <div class="py-2">
+                        <p class="m-0"><i class="fa fa-phone-alt me-2"></i>+012 345 6789</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow-sm px-5 py-3 py-lg-0">
+        <a href="index.html" class="navbar-brand p-0">
+            <img src="img/logo.jpg" alt="Consult Logo" class="logo-img me-2">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+                                        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto py-0 me-n3">
+                <a href="index.html" class="nav-item nav-link">Home</a>
+                <a href="about.html" class="nav-item nav-link">About Us</a>
+                <a href="service.html" class="nav-item nav-link">Services</a>
+                <a href="feature.html" class="nav-item nav-link">Why Choose Us</a>
+                <a href="team.html" class="nav-item nav-link">Our Team</a>
+                <a href="testimonial.html" class="nav-item nav-link">Testimonials</a>
+                <a href="blog.html" class="nav-item nav-link">Blog</a>
+                <a href="quote.html" class="nav-item nav-link">Get a Quote</a>
+                <a href="faqs.html" class="nav-item nav-link">FAQs</a>
+                <a href="contact.html" class="nav-item nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Page Header Start -->
+    <div class="container-fluid bg-dark p-5">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h1 class="display-4 text-white">Free Quote</h1>
+                <a href="index.html">Home</a>
+                <i class="far fa-square text-primary px-2"></i>
+                Free Quote
+            </div>
+        </div>
+    </div>
+    <!-- Page Header End -->
+
+
+    <!-- Quote Start -->
+    <div class="container-fluid bg-secondary px-0">
+        <div class="row g-0">
+            <div class="col-lg-6 py-6 px-5">
+                <h1 class="display-5 mb-4">Request A Free Quote</h1>
+                <p class="mb-4">Kasd vero erat ea amet justo no stet, et elitr no dolore no elitr sea kasd et dolor diam tempor. Nonumy sed dolore no eirmod sit nonumy vero lorem amet stet diam at. Ea at lorem sed et, lorem et rebum ut eirmod gubergren, dolor ea duo diam justo dolor diam ipsum dolore stet stet elitr ut. Ipsum amet labore lorem lorem diam magna sea, eos sed dolore elitr.</p>
+                <form>
+                    <div class="row gx-3">
+                        <div class="col-6">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="form-floating-1" placeholder="John Doe">
+                                <label for="form-floating-1">Full Name</label>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control" id="form-floating-2" placeholder="name@example.com">
+                                <label for="form-floating-2">Email address</label>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="form-floating">
+                                <select class="form-select" id="floatingSelect" aria-label="Financial Consultancy">
+                                    <option selected>Financial Consultancy</option>
+                                    <option value="1">Strategy Consultancy</option>
+                                    <option value="2">Tax Consultancy</option>
+                                </select>
+                                <label for="floatingSelect">Select A Service</label>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <button class="btn btn-primary w-100 h-100" type="submit">Request A Quote</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-lg-6" style="min-height: 400px;">
+                <div class="position-relative h-100">
+                    <img class="position-absolute w-100 h-100" src="img/quote.jpg" style="object-fit: cover;">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Quote End -->
+    
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-primary text-secondary p-5">
+        <div class="row g-5">
+            <div class="col-12 text-center">
+                <h1 class="display-5 mb-4">Stay Update!!!</h1>
+                <form class="mx-auto" style="max-width: 600px;">
+                    <div class="input-group">
+                        <input type="text" class="form-control border-white p-3" placeholder="Your Email">
+                        <button class="btn btn-dark px-4">Sign Up</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-dark text-secondary p-5">
+        <div class="row g-5">
+            <div class="col-lg-3 col-md-6">
+                <h3 class="text-white mb-4">Quick Links</h3>
+                <div class="d-flex flex-column justify-content-start">
+                    <a class="text-secondary mb-2" href="index.html"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
+                    <a class="text-secondary mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
+                    <a class="text-secondary mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Our Services</a>
+                    <a class="text-secondary mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Latest Blog Post</a>
+                    <a class="text-secondary" href="contact.html"><i class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h3 class="text-white mb-4">Popular Links</h3>
+                <div class="d-flex flex-column justify-content-start">
+                    <a class="text-secondary mb-2" href="index.html"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
+                    <a class="text-secondary mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
+                    <a class="text-secondary mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Our Services</a>
+                    <a class="text-secondary mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Latest Blog Post</a>
+                    <a class="text-secondary" href="contact.html"><i class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h3 class="text-white mb-4">Get In Touch</h3>
+                <p class="mb-2"><i class="bi bi-geo-alt text-primary me-2"></i>123 Street, New York, USA</p>
+                <p class="mb-2"><i class="bi bi-envelope-open text-primary me-2"></i>info@example.com</p>
+                <p class="mb-0"><i class="bi bi-telephone text-primary me-2"></i>+012 345 67890</p>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h3 class="text-white mb-4">Follow Us</h3>
+                <div class="d-flex">
+                    <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-2" href="#"><i class="fab fa-twitter fw-normal"></i></a>
+                    <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-2" href="#"><i class="fab fa-facebook-f fw-normal"></i></a>
+                    <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-2" href="#"><i class="fab fa-linkedin-in fw-normal"></i></a>
+                    <a class="btn btn-lg btn-primary btn-lg-square rounded-circle" href="#"><i class="fab fa-instagram fw-normal"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    
+  <!-- Chat Bot -->
+    <div class="chat-bot-container">
+        <div class="chat-bot-widget" id="chatBotWidget">
+            <div class="chat-bot-header">
+                <div class="chat-bot-info">
+                    <div class="chat-bot-avatar">
+                        <i class="bi bi-robot"></i>
+                    </div>
+                    <div class="chat-bot-details">
+                        <h6>Consult Assistant</h6>
+                        <span class="status-indicator online">Online</span>
+                    </div>
+                </div>
+                <button class="chat-bot-close" id="closeChatBot">
+                    <i class="bi bi-x-lg"></i>
+                </button>
+            </div>
+            
+            <div class="chat-bot-messages" id="chatMessages">
+                <div class="chat-message bot-message">
+                    <div class="message-content">
+                        <p>Hello! I'm your consultation assistant. How can I help you today?</p>
+                    </div>
+                    <div class="message-time">Just now</div>
+                </div>
+            </div>
+            
+            <div class="chat-bot-input-container">
+                <div class="chat-bot-input-wrapper">
+                    <input type="text" id="chatInput" placeholder="Ask any question..." style="padding: 10px; border-radius: 10px; border: none; width: 80%"/>
+                    <button id="sendMessageBtn" style="padding: 10px; border-radius: 10px; border: none; width: 20%">
+                        <i class="bi bi-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <button class="chat-bot-toggle" id="chatBotToggle">
+            <i class="bi bi-chat-dots"></i>
+            <span class="chat-badge">1</span>
+        </button>
+    </div>
+
+    <!-- Chat Bot JavaScript -->
+    <script>
+        // Chat Bot functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const chatBotToggle = document.getElementById('chatBotToggle');
+            const chatBotWidget = document.getElementById('chatBotWidget');
+            const closeChatBot = document.getElementById('closeChatBot');
+            const chatInput = document.getElementById('chatInput');
+            const sendMessageBtn = document.getElementById('sendMessageBtn');
+            const chatMessages = document.getElementById('chatMessages');
+            const chatBadge = document.querySelector('.chat-badge');
+            
+            let isOpen = false;
+            let messageCount = 1;
+            
+            // Toggle chat bot
+            chatBotToggle.addEventListener('click', function() {
+                isOpen = !isOpen;
+                if (isOpen) {
+                    chatBotWidget.style.display = 'block';
+                    chatBadge.style.display = 'none';
+                    chatInput.focus();
+                } else {
+                    chatBotWidget.style.display = 'none';
+                }
+            });
+            
+            // Close chat bot
+            closeChatBot.addEventListener('click', function() {
+                isOpen = false;
+                chatBotWidget.style.display = 'none';
+            });
+            
+            // Send message function
+            function sendMessage() {
+                const message = chatInput.value.trim();
+                if (message) {
+                    // Add user message
+                    addMessage(message, true);
+                    chatInput.value = '';
+                    
+                    // Simulate bot response
+                    setTimeout(() => {
+                        const botResponse = generateBotResponse(message);
+                        addMessage(botResponse, false);
+                    }, 1000);
+                }
+            }
+            
+            // Add message to chat
+            function addMessage(content, isUser = false) {
+                const messageDiv = document.createElement('div');
+                messageDiv.className = `chat-message ${isUser ? 'user-message' : 'bot-message'}`;
+                
+                const messageContent = document.createElement('div');
+                messageContent.className = 'message-content';
+                
+                const messageText = document.createElement('p');
+                messageText.textContent = content;
+                messageContent.appendChild(messageText);
+                
+                const messageTime = document.createElement('div');
+                messageTime.className = 'message-time';
+                const now = new Date();
+                messageTime.textContent = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+                
+                messageDiv.appendChild(messageContent);
+                messageDiv.appendChild(messageTime);
+                
+                chatMessages.appendChild(messageDiv);
+                
+                // Auto-scroll to bottom to show newest message
+                chatMessages.scrollTop = chatMessages.scrollHeight;
+            }
+            
+            // Check if chat is empty and restore default message
+            function checkAndRestoreDefaultMessage() {
+                const messages = chatMessages.querySelectorAll('.chat-message');
+                if (messages.length === 0) {
+                    const defaultMessageDiv = document.createElement('div');
+                    defaultMessageDiv.className = 'chat-message bot-message';
+                    
+                    const defaultMessageContent = document.createElement('div');
+                    defaultMessageContent.className = 'message-content';
+                    
+                    const defaultMessageText = document.createElement('p');
+                    defaultMessageText.textContent = "Hello! I'm your consultation assistant. How can I help you today?";
+                    defaultMessageContent.appendChild(defaultMessageText);
+                    
+                    const defaultTime = document.createElement('div');
+                    defaultTime.className = 'message-time';
+                    defaultTime.textContent = "Just now";
+                    
+                    defaultMessageDiv.appendChild(defaultMessageContent);
+                    defaultMessageDiv.appendChild(defaultTime);
+                    
+                    chatMessages.appendChild(defaultMessageDiv);
+                }
+            }
+            
+            // Generate bot responses
+            function generateBotResponse(message) {
+                const lowerMessage = message.toLowerCase();
+                
+                if (lowerMessage.includes('hello') || lowerMessage.includes('hi')) {
+                    return "Hello! How can I assist you with our consultancy services today?";
+                } else if (lowerMessage.includes('service')) {
+                    return "We offer business consultancy, strategic planning, and operational optimization services. Would you like more details about any specific service?";
+                } else if (lowerMessage.includes('price') || lowerMessage.includes('cost')) {
+                    return "Our pricing varies based on your specific needs. I'd be happy to schedule a consultation to discuss your requirements and provide a custom quote.";
+                } else if (lowerMessage.includes('contact') || lowerMessage.includes('phone') || lowerMessage.includes('email')) {
+                    return "You can reach us at +012 345 6789 or info@example.com. We're available Monday-Friday, 9AM-6PM.";
+                } else if (lowerMessage.includes('appointment') || lowerMessage.includes('meeting')) {
+                    return "I can help you schedule a consultation. Please let me know your preferred date and time, and I'll arrange it for you.";
+                } else {
+                    return "Thank you for your message. For more detailed assistance, please contact our team directly at info@example.com or call +012 345 6789.";
+                }
+            }
+            
+            // Event listeners
+            sendMessageBtn.addEventListener('click', sendMessage);
+            chatInput.addEventListener('keypress', function(e) {
+                if (e.key === 'Enter') {
+                    sendMessage();
+                }
+            });
+            
+            // Show notification badge when closed and new messages would appear
+            setInterval(() => {
+                if (!isOpen && messageCount > 1) {
+                    chatBadge.style.display = 'block';
+                    chatBadge.textContent = messageCount;
+                }
+            }, 1000);
+        });
+    </script>
+  </body>
+
+</html>

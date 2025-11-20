@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Consultancy Website</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" href="img/favicon.ico">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@500;700&display=swap" rel="stylesheet"> 
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+<style>/* =====================
+   ENHANCED NAVIGATION STYLES
+   ===================== */
+.navbar {
+    background: #ffffff !important;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08) !important;
+    padding: 10px 0 !important;
+    transition: all 0.3s ease !important;
+}
+
+.navbar.sticky-top {
+    background: rgba(255, 255, 255, 0.98) !important;
+    backdrop-filter: blur(10px) !important;
+    -webkit-backdrop-filter: blur(10px) !important;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1) !important;
+    padding: 8px 0 !important;
+}
+
+.navbar-light .navbar-nav {
+    gap: 2px !important;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    font-family: 'Barlow', sans-serif !important;
+    padding: 12px 16px !important;
+    margin: 0 2px !important;
+    font-size: 15px !important;
+    font-weight: 500 !important;
+    color: #2d3436 !important;
+    border-radius: 6px !important;
+    transition: all 0.3s ease !important;
+    position: relative !important;
+    text-transform: capitalize !important;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link:focus {
+    color: var(--primary) !important;
+    background: rgba(51, 122, 131, 0.08) !important;
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+    color: var(--primary) !important;
+    font-weight: 600 !important;
+    position: relative !important;
+}
+
+.navbar-light .navbar-nav .nav-link.active::after {
+    content: '' !important;
+    position: absolute !important;
+    bottom: 8px !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    width: 20px !important;
+    height: 2px !important;
+    background: var(--primary) !important;
+    border-radius: 2px !important;
+}
+
+/* Dropdown Menu */
+.navbar-light .navbar-nav .dropdown-menu {
+    border: none !important;
+    border-radius: 8px !important;
+    padding: 8px 0 !important;
+    margin-top: 8px !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1) !important;
+    border-top: 3px solid var(--primary) !important;
+}
+
+.navbar-light .navbar-nav .dropdown-item {
+    padding: 8px 20px !important;
+    font-size: 14px !important;
+    color: #4a4a4a !important;
+    transition: all 0.2s ease !important;
+}
+
+.navbar-light .navbar-nav .dropdown-item:hover,
+.navbar-light .navbar-nav .dropdown-item:focus {
+    background: rgba(51, 122, 131, 0.05) !important;
+    color: var(--primary) !important;
+    padding-left: 25px !important;
+}
+
+/* Mobile Menu */
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+        background: #fff !important;
+        border-radius: 8px !important;
+        padding: 10px !important;
+        margin-top: 10px !important;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1) !important;
+    }
+    
+    .navbar-light .navbar-nav .nav-link {
+        padding: 10px 15px !important;
+        margin: 2px 0 !important;
+    }
+    
+    .navbar-light .dropdown-menu {
+        border: none !important;
+        box-shadow: none !important;
+        padding-left: 15px !important;
+        margin: 5px 0 !important;
+    }
+}</style></head>
+<body>
+
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-secondary ps-5 pe-0 d-none d-lg-block">
+        <div class="row gx-0">
+            <div class="col-md-6 text-center text-lg-start mb-2 mb-lg-0">
+                <div class="d-inline-flex align-items-center">
+                    <a class="text-body py-2 pe-3 border-end" href="faqs.html"><small>FAQs</small></a>
+                    <a class="text-body py-2 px-3 border-end" href="#"><small>Support</small></a>
+                    <a class="text-body py-2 px-3 border-end" href="#"><small>Privacy</small></a>
+                    <a class="text-body py-2 px-3 border-end" href="#"><small>Policy</small></a>
+                    <a class="text-body py-2 ps-3" href="#"><small>Career</small></a>
+                </div>
+            </div>
+            <div class="col-md-6 text-center text-lg-end">
+                <div class="position-relative d-inline-flex align-items-center bg-primary text-white top-shape px-5">
+                    <div class="me-3 pe-3 border-end py-2">
+                        <p class="m-0"><i class="fa fa-envelope-open me-2"></i>info@example.com</p>
+                    </div>
+                    <div class="py-2">
+                        <p class="m-0"><i class="fa fa-phone-alt me-2"></i>+012 345 6789</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow-sm px-5 py-3 py-lg-0">
+        <a href="index.html" class="navbar-brand p-0 d-flex align-items-center">
+            <img src="img/logo.jpg" alt="Consult Logo" class="logo-img me-2">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto py-0 me-n3">
+                <a href="index.html" class="nav-item nav-link">Home</a>
+                <a href="about.html" class="nav-item nav-link">About Us</a>
+                <a href="service.html" class="nav-item nav-link">Services</a>
+                <a href="feature.html" class="nav-item nav-link">Why Choose Us</a>
+                <a href="team.html" class="nav-item nav-link">Our Team</a>
+                <a href="testimonial.html" class="nav-item nav-link">Testimonials</a>
+                <a href="blog.html" class="nav-item nav-link">Blog</a>
+                <a href="quote.html" class="nav-item nav-link">Get a Quote</a>
+                <a href="faqs.html" class="nav-item nav-link active">FAQs</a>
+                <a href="contact.html" class="nav-item nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Page Header Start -->
+    <div class="container-fluid bg-dark bg-img p-5 mb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1 class="display-4 text-white text-uppercase mb-3">FAQs</h1>
+                    <div class="d-inline-flex text-white mb-4">
+                        <p class="m-0 text-uppercase"><a class="text-white" href="index.html">Home</a></p>
+                        <i class="fa fa-angle-double-right pt-1 px-3"></i>
+                        <p class="m-0 text-uppercase">FAQs</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Page Header End -->
+
+    <!-- Breadcrumb End -->
+
+    <!-- FAQ Section Start -->
+    <div class="container-fluid py-5">
+        <div class="row g-5">
+            <div class="col-lg-8">
+                <div class="text-center mx-auto mb-5" style="max-width: 700px;">
+                    <h1 class="display-5 mb-0 text-primary">Frequently Asked Questions</h1>
+                    <hr class="w-25 mx-auto bg-primary" style="height: 3px;">
+                    <p class="mt-3 fs-5 text-muted">Find answers to common questions about our services, processes, and how we can help your business succeed.</p>
+                </div>
+
+                <!-- Search Results Section (Hidden by default) -->
+                <div id="searchResults" class="alert alert-info d-none" role="alert">
+                    <h5 class="alert-heading"><i class="bi bi-search me-2"></i>Search Results</h5>
+                    <p class="mb-0">Found <span id="resultCount">0</span> questions matching your search.</p>
+                </div>
+
+                <!-- FAQ Accordion -->
+                <style>
+                    /* FAQ Accordion Styles */
+                    .accordion-button {
+                        background-color: #f8f9fa;
+                        color: #2d3436;
+                        font-weight: 500;
+                        padding: 1.25rem 1.5rem;
+                        border: 1px solid #e9ecef;
+                        border-radius: 6px !important;
+                        margin-bottom: 10px;
+                        transition: all 0.3s ease;
+                    }
+                    
+                    .accordion-button:not(.collapsed) {
+                        background-color: #f0f7fa;
+                        color: #0d6efd;
+                        box-shadow: none;
+                        border-color: #e9ecef;
+                    }
+                    
+                    .accordion-button:focus {
+                        box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.15);
+                        border-color: #86b7fe;
+                    }
+                    
+                    .accordion-button::after {
+                        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%232d3436'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+                        transition: transform 0.3s ease;
+                    }
+                    
+                    .accordion-button:not(.collapsed)::after {
+                        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%230d6efd'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+                    }
+                    
+                    .accordion-body {
+                        padding: 1.5rem;
+                        background-color: #fff;
+                        border: 1px solid #e9ecef;
+                        border-top: none;
+                        border-radius: 0 0 6px 6px;
+                        margin-top: -10px;
+                        margin-bottom: 15px;
+                        color: #495057;
+                        line-height: 1.7;
+                    }
+                    
+                    .accordion-item {
+                        border: none;
+                        background-color: transparent;
+                        margin-bottom: 15px;
+                    }
+                    
+                    .accordion-button:hover {
+                        background-color: #f1f8ff;
+                    }
+                </style>
+                
+                <div class="accordion" id="faqAccordion">
+                    <!-- General Questions -->
+                    <div class="accordion-item mb-3">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                                <i class="bi bi-question-circle text-primary me-3"></i>
+                                What types of consultancy services do you offer?
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                <p>We offer a comprehensive range of consultancy services including:</p>
+                                <ul>
+                                    <li>Business Strategy & Planning</li>
+                                    <li>Operational Optimization</li>
+                                    <li>Financial Advisory</li>
+                                    <li>Market Research & Analysis</li>
+                                    <li>Digital Transformation</li>
+                                    <li>Organizational Development</li>
+                                </ul>
+                                <p>Each service is tailored to meet your specific business needs and objectives.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item mb-3">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                                <i class="bi bi-question-circle text-primary me-3"></i>
+                                How do I get started with your consultancy services?
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                <p>Getting started is simple and straightforward:</p>
+                                <ol>
+                                    <li>Schedule an initial consultation through our contact form or by calling us</li>
+                                    <li>We'll conduct a thorough assessment of your business needs</li>
+                                    <li>Receive a customized proposal with recommendations</li>
+                                    <li>Begin implementation with our expert team</li>
+                                </ol>
+                                <p>The entire process typically takes 2-3 weeks from initial contact to project kickoff.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item mb-3">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                                <i class="bi bi-question-circle text-primary me-3"></i>
+                                What makes your consultancy different from others?
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                <p>Our unique approach sets us apart:</p>
+                                <ul>
+                                    <li><strong>Industry-Specific Expertise:</strong> Deep knowledge across multiple sectors</li>
+                                    <li><strong>Data-Driven Solutions:</strong> All recommendations backed by thorough analysis</li>
+                                    <li><strong>Collaborative Approach:</strong> We work as partners with your team</li>
+                                    <li><strong>Proven Track Record:</strong> 95% client satisfaction rate</li>
+                                    <li><strong>Continuous Support:</strong> Ongoing guidance even after project completion</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pricing Questions -->
+                    <div class="accordion-item mb-3">
+                        <h2 class="accordion-header" id="headingFour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour">
+                                <i class="bi bi-currency-dollar text-primary me-3"></i>
+                                How do you structure your pricing?
+                            </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                <p>We offer flexible pricing models to suit different business needs:</p>
+                                <ul>
+                                    <li><strong>Fixed Project Fees:</strong> For well-defined projects with clear scope</li>
+                                    <li><strong>Hourly Rates:</strong> For ongoing advisory and consulting work</li>
+                                    <li><strong>Retainer Agreements:</strong> For continuous support and strategic guidance</li>
+                                    <li><strong>Performance-Based Pricing:</strong> Tied to specific outcomes and KPIs</li>
+                                </ul>
+                                <p>During our initial consultation, we'll recommend the most suitable pricing structure for your project.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item mb-3">
+                        <h2 class="accordion-header" id="headingFive">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive">
+                                <i class="bi bi-currency-dollar text-primary me-3"></i>
+                                Are there any hidden costs or additional fees?
+                            </button>
+                        </h2>
+                        <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                <p>We believe in complete transparency. Our proposals include:</p>
+                                <ul>
+                                    <li>Detailed breakdown of all costs</li>
+                                    <li>Clear scope of deliverables</li>
+                                    <li>Timeline and milestones</li>
+                                    <li>Any potential additional costs (if applicable)</li>
+                                </ul>
+                                <p>There are no hidden fees. Any changes to scope or additional work are discussed and approved in advance.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Process Questions -->
+                    <div class="accordion-item mb-3">
+                        <h2 class="accordion-header" id="headingSix">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix">
+                                <i class="bi bi-gear text-primary me-3"></i>
+                                How long does a typical consultancy project take?
+                            </button>
+                        </h2>
+                        <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                <p>Project timelines vary based on scope and complexity:</p>
+                                <ul>
+                                    <li><strong>Quick Assessments:</strong> 2-4 weeks</li>
+                                    <li><strong>Strategy Development:</strong> 6-12 weeks</li>
+                                    <li><strong>Implementation Projects:</strong> 3-6 months</li>
+                                    <li><strong>Long-term Partnerships:</strong> Ongoing with quarterly reviews</li>
+                                </ul>
+                                <p>We'll provide a detailed timeline during the proposal phase based on your specific requirements.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item mb-3">
+                        <h2 class="accordion-header" id="headingSeven">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven">
+                                <i class="bi bi-gear text-primary me-3"></i>
+                                What is your project methodology?
+                            </button>
+                        </h2>
+                        <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                <p>We follow a proven methodology that ensures successful outcomes:</p>
+                                <ol>
+                                    <li><strong>Discovery Phase:</strong> Understanding your business and challenges</li>
+                                    <li><strong>Analysis Phase:</strong> Data collection and comprehensive analysis</li>
+                                    <li><strong>Strategy Development:</strong> Creating tailored solutions</li>
+                                    <li><strong>Implementation:</strong> Executing the plan with your team</li>
+                                    <li><strong>Monitoring & Optimization:</strong> Tracking progress and making adjustments</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Support Questions -->
+                    <div class="accordion-item mb-3">
+                        <h2 class="accordion-header" id="headingEight">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight">
+                                <i class="bi bi-headset text-primary me-3"></i>
+                                What kind of support do you provide after project completion?
+                            </button>
+                        </h2>
+                        <div id="collapseEight" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                <p>Our commitment extends beyond project completion:</p>
+                                <ul>
+                                    <li>30-day post-project support period</li>
+                                    <li>Comprehensive documentation and training</li>
+                                    <li>Quarterly check-in calls for 6 months</li>
+                                    <li>Lifetime access to our client resource portal</li>
+                                    <li>Priority support for returning clients</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item mb-3">
+                        <h2 class="accordion-header" id="headingNine">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine">
+                                <i class="bi bi-headset text-primary me-3"></i>
+                                How can I contact your support team?
+                            </button>
+                        </h2>
+                        <div id="collapseNine" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                <p>We offer multiple channels for support:</p>
+                                <ul>
+                                    <li><strong>Phone:</strong> +012 345 67890 (Mon-Fri, 9AM-6PM)</li>
+                                    <li><strong>Email:</strong> support@example.com</li>
+                                    <li><strong>Client Portal:</strong> 24/7 access to resources and ticket system</li>
+                                    <li><strong>Emergency Hotline:</strong> Available for critical issues</li>
+                                </ul>
+                                <p>Current clients receive priority support with guaranteed response times.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Results Questions -->
+                    <div class="accordion-item mb-3">
+                        <h2 class="accordion-header" id="headingTen">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen">
+                                <i class="bi bi-graph-up text-primary me-3"></i>
+                                Can you guarantee specific results?
+                            </button>
+                        </h2>
+                        <div id="collapseTen" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                <p>While we can't guarantee specific outcomes due to various external factors, we ensure:</p>
+                                <ul>
+                                    <li>Clear, measurable objectives and KPIs</li>
+                                    <li>Regular progress reports and updates</li>
+                                    <li>Adjustment of strategies based on performance</li>
+                                    <li>Commitment to achieving the best possible results</li>
+                                </ul>
+                                <p>Our 95% client satisfaction rate speaks to our ability to deliver exceptional value consistently.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item mb-3">
+                        <h2 class="accordion-header" id="headingEleven">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEleven">
+                                <i class="bi bi-graph-up text-primary me-3"></i>
+                                How do you measure success?
+                            </button>
+                        </h2>
+                        <div id="collapseEleven" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                <p>Success is measured through various metrics depending on your goals:</p>
+                                <ul>
+                                    <li><strong>Financial Metrics:</strong> ROI, cost reduction, revenue growth</li>
+                                    <li><strong>Operational Metrics:</strong> Efficiency improvements, process optimization</li>
+                                    <li><strong>Customer Metrics:</strong> Satisfaction scores, retention rates</li>
+                                    <li><strong>Strategic Metrics:</strong> Market position, competitive advantage</li>
+                                </ul>
+                                <p>We establish clear success criteria at the beginning of each project.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sidebar Start -->
+            <div class="col-lg-4">
+                <!-- Search Box -->
+                <div class="card shadow-sm border-0 rounded-3 mb-4">
+                    <div class="card-body p-4 bg-white">
+                        <h4 class="card-title text-primary mb-4"><i class="bi bi-search me-2"></i>Search FAQs</h4>
+                        <div class="input-group">
+                            <input type="text" class="form-control form-control-lg border-2" id="faqSearch" placeholder="Type your question...">
+                            <button class="btn btn-primary btn-lg" type="button" id="searchBtn">
+                                <i class="bi bi-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Categories -->
+                <div class="card shadow-sm border-0 rounded-3 mb-4">
+                    <div class="card-body p-4 bg-white">
+                        <h4 class="card-title text-primary mb-4"><i class="bi bi-folder me-2"></i>Categories</h4>
+                        <div class="d-flex flex-column gap-2">
+                            <a href="#" class="category-btn btn btn-outline-primary text-start py-3 px-4 rounded-2" data-category="general">
+                                <i class="bi bi-question-circle me-2"></i>General Questions
+                                <span class="badge bg-primary float-end">3</span>
+                            </a>
+                            <a href="#" class="category-btn btn btn-outline-primary text-start py-3 px-4 rounded-2" data-category="pricing">
+                                <i class="bi bi-currency-dollar me-2"></i>Pricing
+                                <span class="badge bg-primary float-end">2</span>
+                            </a>
+                            <a href="#" class="category-btn btn btn-outline-primary text-start py-3 px-4 rounded-2" data-category="process">
+                                <i class="bi bi-gear me-2"></i>Process
+                                <span class="badge bg-primary float-end">2</span>
+                            </a>
+                            <a href="#" class="category-btn btn btn-outline-primary text-start py-3 px-4 rounded-2" data-category="support">
+                                <i class="bi bi-headset me-2"></i>Support
+                                <span class="badge bg-primary float-end">2</span>
+                            </a>
+                            <a href="#" class="category-btn btn btn-outline-primary text-start py-3 px-4 rounded-2" data-category="results">
+                                <i class="bi bi-graph-up me-2"></i>Results
+                                <span class="badge bg-primary float-end">2</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quick Stats -->
+                <div class="card shadow-sm border-0 rounded-3 mb-4 bg-primary text-white">
+                    <div class="card-body p-4">
+                        <h4 class="card-title mb-4"><i class="bi bi-award me-2"></i>Our Impact</h4>
+                        <div class="row g-3">
+                            <div class="col-6">
+                                <div class="text-center">
+                                    <h2 class="display-6 fw-bold">500+</h2>
+                                    <p class="mb-0">Happy Clients</p>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="text-center">
+                                    <h2 class="display-6 fw-bold">95%</h2>
+                                    <p class="mb-0">Success Rate</p>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="text-center">
+                                    <h2 class="display-6 fw-bold">24/7</h2>
+                                    <p class="mb-0">Support</p>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="text-center">
+                                    <h2 class="display-6 fw-bold">10+</h2>
+                                    <p class="mb-0">Years Experience</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Support -->
+                <div class="card shadow-sm border-0 rounded-3 bg-dark text-white">
+                    <div class="card-body p-4">
+                        <h4 class="card-title mb-4"><i class="bi bi-chat-dots me-2"></i>Still Have Questions?</h4>
+                        <p class="mb-4">Can't find what you're looking for? Our support team is here to help!</p>
+                        <div class="d-grid gap-3">
+                            <a href="contact.html" class="btn btn-light btn-lg py-3">
+                                <i class="bi bi-envelope me-2"></i>Contact Support
+                            </a>
+                            <a href="quote.html" class="btn btn-primary btn-lg py-3">
+                                <i class="bi bi-file-text me-2"></i>Get a Quote
+                            </a>
+                        </div>
+                        <div class="mt-4 text-center">
+                            <p class="mb-2">Call us directly:</p>
+                            <h5 class="mb-0"><i class="bi bi-telephone me-2"></i>+012 345 67890</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FAQ Section End -->
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-primary text-secondary p-5">
+        <div class="row g-5">
+            <div class="col-12 text-center">
+                <h1 class="display-5 mb-4">Stay Update!!!</h1>
+                <form class="mx-auto" style="max-width: 600px;">
+                    <div class="input-group">
+                        <input type="text" class="form-control border-white p-3" placeholder="Your Email">
+                        <button class="btn btn-dark px-4">Sign Up</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-dark text-secondary p-5">
+        <div class="row g-5">
+            <div class="col-lg-3 col-md-6">
+                <h3 class="text-white mb-4">Quick Links</h3>
+                <div class="d-flex flex-column justify-content-start">
+                    <a class="text-secondary mb-2" href="index.html"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
+                    <a class="text-secondary mb-2" href="about.html"><i class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
+                    <a class="text-secondary mb-2" href="service.html"><i class="bi bi-arrow-right text-primary me-2"></i>Our Services</a>
+                    <a class="text-secondary mb-2" href="blog.html"><i class="bi bi-arrow-right text-primary me-2"></i>Latest Blog Post</a>
+                    <a class="text-secondary" href="contact.html"><i class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h3 class="text-white mb-4">Popular Links</h3>
+                <div class="d-flex flex-column justify-content-start">
+                    <a class="text-secondary mb-2" href="index.html"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
+                    <a class="text-secondary mb-2" href="about.html"><i class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
+                    <a class="text-secondary mb-2" href="service.html"><i class="bi bi-arrow-right text-primary me-2"></i>Our Services</a>
+                    <a class="text-secondary mb-2" href="blog.html"><i class="bi bi-arrow-right text-primary me-2"></i>Latest Blog Post</a>
+                    <a class="text-secondary" href="contact.html"><i class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h3 class="text-white mb-4">Get In Touch</h3>
+                <p class="mb-2"><i class="bi bi-geo-alt text-primary me-2"></i>123 Street, New York, USA</p>
+                <p class="mb-2"><i class="bi bi-envelope-open text-primary me-2"></i>info@example.com</p>
+                <p class="mb-0"><i class="bi bi-telephone text-primary me-2"></i>+012 345 67890</p>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h3 class="text-white mb-4">Follow Us</h3>
+                <div class="d-flex">
+                    <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-2" href="#"><i class="fab fa-twitter fw-normal"></i></a>
+                    <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-2" href="#"><i class="fab fa-facebook-f fw-normal"></i></a>
+                    <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-2" href="#"><i class="fab fa-linkedin-in fw-normal"></i></a>
+                    <a class="btn btn-lg btn-primary btn-lg-square rounded-circle" href="#"><i class="fab fa-instagram fw-normal"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    <!-- Footer End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    
+    <!-- FAQ Search Functionality -->
+    <script>
+        function searchFAQ() {
+            const searchTerm = document.getElementById('faqSearch').value.toLowerCase();
+            const accordionItems = document.querySelectorAll('.accordion-item');
+            
+            accordionItems.forEach(item => {
+                const question = item.querySelector('.accordion-button span, .accordion-button').textContent.toLowerCase();
+                const answer = item.querySelector('.accordion-body').textContent.toLowerCase();
+                
+                if (question.includes(searchTerm) || answer.includes(searchTerm)) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
+
+        function filterCategory(category) {
+            const accordionItems = document.querySelectorAll('.accordion-item');
+            
+            accordionItems.forEach((item, index) => {
+                // Reset all items to visible
+                item.style.display = 'block';
+                
+                // Close all accordions
+                const button = item.querySelector('.accordion-button');
+                const collapse = item.querySelector('.accordion-collapse');
+                button.classList.add('collapsed');
+                button.setAttribute('aria-expanded', 'false');
+                collapse.classList.remove('show');
+                
+                // Highlight category-specific items
+                if (category === 'general' && index >= 0 && index <= 2) {
+                    button.classList.remove('collapsed');
+                    button.setAttribute('aria-expanded', 'true');
+                    collapse.classList.add('show');
+                } else if (category === 'pricing' && index >= 3 && index <= 4) {
+                    button.classList.remove('collapsed');
+                    button.setAttribute('aria-expanded', 'true');
+                    collapse.classList.add('show');
+                } else if (category === 'process' && index >= 5 && index <= 6) {
+                    button.classList.remove('collapsed');
+                    button.setAttribute('aria-expanded', 'true');
+                    collapse.classList.add('show');
+                } else if (category === 'support' && index >= 7 && index <= 8) {
+                    button.classList.remove('collapsed');
+                    button.setAttribute('aria-expanded', 'true');
+                    collapse.classList.add('show');
+                } else if (category === 'results' && index >= 9 && index <= 10) {
+                    button.classList.remove('collapsed');
+                    button.setAttribute('aria-expanded', 'true');
+                    collapse.classList.add('show');
+                }
+            });
+        }
+
+        // Search on Enter key
+        document.getElementById('faqSearch').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                searchFAQ();
+            }
+        });
+
+        // Search button click
+        document.getElementById('searchBtn').addEventListener('click', searchFAQ);
+
+        // Category button clicks
+        document.querySelectorAll('.category-btn').forEach(btn => {
+            btn.addEventListener('click', function(e) {
+                e.preventDefault();
+                const category = this.getAttribute('data-category');
+                
+                // Remove active class from all category buttons
+                document.querySelectorAll('.category-btn').forEach(b => {
+                    b.classList.remove('btn-primary');
+                    b.classList.add('btn-outline-primary');
+                });
+                
+                // Add active class to clicked button
+                this.classList.remove('btn-outline-primary');
+                this.classList.add('btn-primary');
+                
+                // Filter by category
+                filterCategory(category);
+            });
+        });
+
+        // Clear search when input is empty
+        document.getElementById('faqSearch').addEventListener('input', function() {
+            if (this.value === '') {
+                const accordionItems = document.querySelectorAll('.accordion-item');
+                accordionItems.forEach(item => {
+                    item.style.display = 'block';
+                });
+                document.getElementById('searchResults').classList.add('d-none');
+            }
+        });
+    </script>
+
+    <!-- Chat Bot -->
+    <div class="chat-bot-container">
+        <div class="chat-bot-widget" id="chatBotWidget">
+            <div class="chat-bot-header">
+                <div class="chat-bot-info">
+                    <div class="chat-bot-avatar">
+                        <i class="bi bi-robot"></i>
+                    </div>
+                    <div class="chat-bot-details">
+                        <h6>Consult Assistant</h6>
+                        <span class="status-indicator online">Online</span>
+                    </div>
+                </div>
+                <button class="chat-bot-close" id="closeChatBot">
+                    <i class="bi bi-x-lg"></i>
+                </button>
+            </div>
+            
+            <div class="chat-bot-messages" id="chatMessages">
+                <div class="chat-message bot-message">
+                    <div class="message-content">
+                        <p>Hello! I'm your consultation assistant. How can I help you today?</p>
+                    </div>
+                    <div class="message-time">Just now</div>
+                </div>
+            </div>
+            
+            <div class="chat-bot-input-container">
+                <div class="chat-bot-input-wrapper">
+                    <input type="text" id="chatInput" placeholder="Ask any question..." style="padding: 10px; border-radius: 10px; border: none; width: 80%"/>
+                    <button id="sendMessageBtn" style="padding: 10px; border-radius: 10px; border: none; width: 20%">
+                        <i class="bi bi-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <button class="chat-bot-toggle" id="chatBotToggle">
+            <i class="bi bi-chat-dots"></i>
+            <span class="chat-badge">1</span>
+        </button>
+    </div>
+
+    <!-- Chat Bot JavaScript -->
+    <script>
+        // Chat Bot functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const chatBotToggle = document.getElementById('chatBotToggle');
+            const chatBotWidget = document.getElementById('chatBotWidget');
+            const closeChatBot = document.getElementById('closeChatBot');
+            const chatInput = document.getElementById('chatInput');
+            const sendMessageBtn = document.getElementById('sendMessageBtn');
+            const chatMessages = document.getElementById('chatMessages');
+            const chatBadge = document.querySelector('.chat-badge');
+            
+            let isOpen = false;
+            let messageCount = 1;
+            
+            // Toggle chat bot
+            chatBotToggle.addEventListener('click', function() {
+                isOpen = !isOpen;
+                if (isOpen) {
+                    chatBotWidget.style.display = 'block';
+                    chatBadge.style.display = 'none';
+                    chatInput.focus();
+                } else {
+                    chatBotWidget.style.display = 'none';
+                }
+            });
+            
+            // Close chat bot
+            closeChatBot.addEventListener('click', function() {
+                isOpen = false;
+                chatBotWidget.style.display = 'none';
+            });
+            
+            // Send message function
+            function sendMessage() {
+                const message = chatInput.value.trim();
+                if (message) {
+                    // Add user message
+                    addMessage(message, true);
+                    chatInput.value = '';
+                    
+                    // Simulate bot response
+                    setTimeout(() => {
+                        const botResponse = generateBotResponse(message);
+                        addMessage(botResponse, false);
+                    }, 1000);
+                }
+            }
+            
+            // Add message to chat
+            function addMessage(content, isUser = false) {
+                const messageDiv = document.createElement('div');
+                messageDiv.className = `chat-message ${isUser ? 'user-message' : 'bot-message'}`;
+                
+                const messageContent = document.createElement('div');
+                messageContent.className = 'message-content';
+                
+                const messageText = document.createElement('p');
+                messageText.textContent = content;
+                messageContent.appendChild(messageText);
+                
+                const messageTime = document.createElement('div');
+                messageTime.className = 'message-time';
+                const now = new Date();
+                messageTime.textContent = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+                
+                messageDiv.appendChild(messageContent);
+                messageDiv.appendChild(messageTime);
+                
+                chatMessages.appendChild(messageDiv);
+                
+                // Auto-scroll to bottom to show newest message
+                chatMessages.scrollTop = chatMessages.scrollHeight;
+            }
+            
+            // Check if chat is empty and restore default message
+            function checkAndRestoreDefaultMessage() {
+                const messages = chatMessages.querySelectorAll('.chat-message');
+                if (messages.length === 0) {
+                    const defaultMessageDiv = document.createElement('div');
+                    defaultMessageDiv.className = 'chat-message bot-message';
+                    
+                    const defaultMessageContent = document.createElement('div');
+                    defaultMessageContent.className = 'message-content';
+                    
+                    const defaultMessageText = document.createElement('p');
+                    defaultMessageText.textContent = "Hello! I'm your consultation assistant. How can I help you today?";
+                    defaultMessageContent.appendChild(defaultMessageText);
+                    
+                    const defaultTime = document.createElement('div');
+                    defaultTime.className = 'message-time';
+                    defaultTime.textContent = "Just now";
+                    
+                    defaultMessageDiv.appendChild(defaultMessageContent);
+                    defaultMessageDiv.appendChild(defaultTime);
+                    
+                    chatMessages.appendChild(defaultMessageDiv);
+                }
+            }
+            
+            // Generate bot responses
+            function generateBotResponse(message) {
+                const lowerMessage = message.toLowerCase();
+                
+                if (lowerMessage.includes('hello') || lowerMessage.includes('hi')) {
+                    return "Hello! How can I assist you with our consultancy services today?";
+                } else if (lowerMessage.includes('service')) {
+                    return "We offer business consultancy, strategic planning, and operational optimization services. Would you like more details about any specific service?";
+                } else if (lowerMessage.includes('price') || lowerMessage.includes('cost')) {
+                    return "Our pricing varies based on your specific needs. I'd be happy to schedule a consultation to discuss your requirements and provide a custom quote.";
+                } else if (lowerMessage.includes('contact') || lowerMessage.includes('phone') || lowerMessage.includes('email')) {
+                    return "You can reach us at +012 345 67890 or info@example.com. We're available Monday-Friday, 9AM-6PM.";
+                } else if (lowerMessage.includes('appointment') || lowerMessage.includes('meeting')) {
+                    return "I can help you schedule a consultation. Please let me know your preferred date and time, and I'll arrange it for you.";
+                } else {
+                    return "Thank you for your message. For more detailed assistance, please contact our team directly at info@example.com or call +012 345 6789.";
+                }
+            }
+            
+            // Event listeners
+            sendMessageBtn.addEventListener('click', sendMessage);
+            chatInput.addEventListener('keypress', function(e) {
+                if (e.key === 'Enter') {
+                    sendMessage();
+                }
+            });
+            
+            // Show notification badge when closed and new messages would appear
+            setInterval(() => {
+                if (!isOpen && messageCount > 1) {
+                    chatBadge.style.display = 'block';
+                    chatBadge.textContent = messageCount;
+                }
+            }, 1000);
+        });
+    </script>
+</body>
+</html>
