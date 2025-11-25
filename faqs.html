@@ -130,7 +130,16 @@
         padding-left: 15px !important;
         margin: 5px 0 !important;
     }
-}</style></head>
+}</style>
+    <!-- Enhanced Styles -->
+    <link href="css/enhancements.css" rel="stylesheet">
+    
+    <!-- Premium Styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+    <link href="css/premium.css" rel="stylesheet">
+    </head>
 <body>
 
     <!-- Topbar Start -->
@@ -190,25 +199,29 @@
             <div class="row">
                 <div class="col-12 text-center">
                     <h1 class="display-4 text-white text-uppercase mb-3">FAQs</h1>
-                    <div class="d-inline-flex text-white mb-4">
-                        <p class="m-0 text-uppercase"><a class="text-white" href="index.html">Home</a></p>
-                        <i class="fa fa-angle-double-right pt-1 px-3"></i>
-                        <p class="m-0 text-uppercase">FAQs</p>
+                    <div class="d-flex align-items-center justify-content-center" style="font-size: 0.9rem;">
+                        <a href="index.html" class="text-uppercase" style="color: #508D95; text-decoration: none; transition: color 0.3s;">Home</a>
+                        <i class="far fa-square text-primary px-2"></i>
+                        <span class="text-uppercase" style="color: #6c757d;">FAQs</span>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <!-- Page Header End -->
-
-    <!-- Breadcrumb End -->
+    <style>
+        /* Breadcrumb Hover Effect */
+        .d-flex a:hover {
+            color: #dc3545 !important;
+        }
+    </style>
 
     <!-- FAQ Section Start -->
     <div class="container-fluid py-5">
         <div class="row g-5">
             <div class="col-lg-8">
                 <div class="text-center mx-auto mb-5" style="max-width: 700px;">
-                    <h1 class="display-5 mb-0 text-primary">Frequently Asked Questions</h1>
+                    <h2 class="display-6 mb-0 text-primary">Frequently Asked Questions</h2>
                     <hr class="w-25 mx-auto bg-primary" style="height: 3px;">
                     <p class="mt-3 fs-5 text-muted">Find answers to common questions about our services, processes, and how we can help your business succeed.</p>
                 </div>
@@ -620,10 +633,10 @@
     <!-- FAQ Section End -->
 
     <!-- Footer Start -->
-    <div class="container-fluid bg-primary text-secondary p-5">
+    <div class="container-fluid bg-primary p-5">
         <div class="row g-5">
             <div class="col-12 text-center">
-                <h1 class="display-5 mb-4">Stay Update!!!</h1>
+                <h1 class="display-5 mb-4 text-white">Stay Update!!!</h1>
                 <form class="mx-auto" style="max-width: 600px;">
                     <div class="input-group">
                         <input type="text" class="form-control border-white p-3" placeholder="Your Email">
@@ -967,5 +980,36 @@
             }, 1000);
         });
     </script>
+    
+
+    
+            <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" id="scrollToTopBtn" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script>
+        // Show/hide scroll-to-top button based on scroll position
+        const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+        
+        window.addEventListener('scroll', function() {
+            if (window.pageYOffset > 300) {
+                scrollToTopBtn.classList.add('visible');
+            } else {
+                scrollToTopBtn.classList.remove('visible');
+            }
+        });
+        
+        // Smooth scroll to top when clicked
+        scrollToTopBtn.addEventListener('click', function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+
+    <!-- Loading Spinner Script -->
+    <script src="js/page-transitions.js"></script>
 </body>
 </html>

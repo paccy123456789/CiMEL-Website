@@ -132,7 +132,16 @@
         padding-left: 15px !important;
         margin: 5px 0 !important;
     }
-}</style></head>
+}</style>
+    <!-- Enhanced Styles -->
+    <link href="css/enhancements.css" rel="stylesheet">
+    
+    <!-- Premium Styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+    <link href="css/premium.css" rel="stylesheet">
+    </head>
 
 <body>
     <!-- Topbar Start -->
@@ -204,7 +213,7 @@
     <!-- Navbar End -->
 
     <!-- Page Header Start -->
-    <div class="container-fluid bg-dark p-5">
+    <div class="container-fluid bg-dark p-5" style="position: relative; min-height: 200px;">
         <div class="row">
             <div class="col-12 text-center">
                 <h1 class="display-4 text-white">About Our Company</h1>
@@ -214,6 +223,12 @@
                 <i class="far fa-square text-primary px-2"></i>
                 Our Company
             </div>
+        </div>
+        <!-- Test Scroll Down Button -->
+        <div class="text-center" style="position: absolute; bottom: 30px; left: 0; right: 0; z-index: 1000;">
+            <a href="#main-content" class="scroll-down-btn">
+                <i class="bi bi-arrow-down-circle-fill"></i>
+            </a>
         </div>
     </div>
     <!-- Page Header End -->
@@ -344,10 +359,10 @@
     <!-- Team End -->
 
     <!-- Footer Start -->
-    <div class="container-fluid bg-primary text-secondary p-5">
+    <div class="container-fluid bg-primary text-white p-5">
         <div class="row g-5">
             <div class="col-12 text-center">
-                <h1 class="display-5 mb-4">Stay Update!!!</h1>
+                <h1 class="display-5 mb-4 text-white">Stay Update!!!</h1>
                 <form class="mx-auto" style="max-width: 600px;">
                     <div class="input-group">
                         <input type="text" class="form-control border-white p-3" placeholder="Your Email">
@@ -413,6 +428,37 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    
+
+    
+            <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" id="scrollToTopBtn" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script>
+        // Show/hide scroll-to-top button based on scroll position
+        const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+        
+        window.addEventListener('scroll', function() {
+            if (window.pageYOffset > 300) {
+                scrollToTopBtn.classList.add('visible');
+            } else {
+                scrollToTopBtn.classList.remove('visible');
+            }
+        });
+        
+        // Smooth scroll to top when clicked
+        scrollToTopBtn.addEventListener('click', function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+
+    <!-- Loading Spinner Script -->
+    <script src="js/page-transitions.js"></script>
 </body>
 
 </html>

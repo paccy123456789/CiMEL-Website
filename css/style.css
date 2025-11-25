@@ -712,6 +712,115 @@ h6,
 transform: translateX(2px);
 }
 
+/* =====================
+   SCROLL TO TOP BUTTON
+   ===================== */
+.scroll-to-top {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, #337A83 0%, #2a656c 100%);
+    color: white;
+    border: 2px solid rgba(255, 255, 255, 0.9);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    z-index: 9999;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+    transform: translateY(15px) scale(0.95);
+    outline: none;
+}
+
+.scroll-to-top.visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0) scale(1);
+}
+
+.scroll-to-top:hover {
+    background: linear-gradient(135deg, #2a656c 0%, #1e4a4f 100%);
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.15);
+}
+
+.scroll-to-top:active,
+.scroll-to-top:focus {
+    transform: translateY(1px) scale(0.98);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    outline: none;
+}
+
+.scroll-to-top i {
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    margin-top: -1px;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.scroll-to-top:hover i {
+    transform: translateY(-3px);
+}
+
+/* Focus styles for keyboard navigation */
+.scroll-to-top:focus-visible {
+    box-shadow: 0 0 0 3px rgba(51, 122, 131, 0.3);
+}
+
+/* Ripple effect */
+.scroll-to-top::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    opacity: 0;
+    transition: all 0.6s ease;
+    transform: scale(0);
+}
+
+.scroll-to-top:active::after {
+    opacity: 1;
+    transform: scale(2);
+    transition: 0s;
+}
+
+@media (max-width: 992px) {
+    .scroll-to-top {
+        bottom: 30px;
+        right: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .scroll-to-top {
+        width: 46px;
+        height: 46px;
+        font-size: 18px;
+        bottom: 25px;
+        right: 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    .scroll-to-top {
+        width: 44px;
+        height: 44px;
+        font-size: 17px;
+        bottom: 20px;
+        right: 20px;
+    }
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .chat-bot-container {
@@ -743,4 +852,43 @@ transform: translateX(2px);
         max-width: 85%;
         font-size: 13px;
     }
+}
+
+/* Hide template's scroll-to-top button */
+.back-to-top, 
+#back-to-top, 
+.go-top, 
+#go-top,
+.scrollup,
+#scrollup {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+}
+
+/* =====================
+   PAGE LOADING SPINNER
+   ===================== */
+.page-loading {
+    position: fixed;
+    top: 0;
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+.page-loading {
+background: rgba(17, 25, 40, 0.98);
+}
+  
+.spinner::before {
+border-color: rgba(255, 255, 255, 0.05);
+border-top-color: #4a9ea8;
+}
+  
+.spinner::after {
+border-color: rgba(255, 255, 255, 0.02);
+border-top-color: rgba(74, 158, 168, 0.4);
+}
+  
+.spinner-text {
+color: #4a9ea8;
+}
 }
